@@ -1,0 +1,25 @@
+{
+  "name": "Yendo al ritmo",
+  "bio": "de AM2 (Compu)",
+  "profilePicture": "/profile-picture.jpg",
+  "url": "https://am2.goalritmo.com",
+  "blog": true,
+  "iconLinks": [],
+  "customLinks": [
+    {
+      "id": "1728534585738",
+      "title": "🎥 Clases Teóricas de Análisis II",
+      "url": "https://www.youtube.com/playlist?list=PLLswL1pDm9IxUaaCleagGalJkgW146uU7"
+    },
+    {
+      "id": "1728534585739",
+      "title": "🎥 Clases Prácticas de Análisis II",
+      "url": "https://www.youtube.com/playlist?list=PLLswL1pDm9IxFXQPQLj5E8HKZq0EvH7eo"
+    },
+    {
+      "id": "1728534585740",
+      "title": "✍ Exámenes Viejos de Análisis II",
+      "url": "https://examenes-viejos.pages.dev/ac/analisis-matematico-2/"
+    }
+  ]
+}
