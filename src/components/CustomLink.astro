@@ -1,10 +1,15 @@
 ---
 const { text, icon, url } = Astro.props;
+
+// Check if the URL is external (starts with http:// or https://)
+const isExternal = url.startsWith('http://') || url.startsWith('https://');
+const linkAttributes = isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {};
 ---
 
 <li>
   <a
     href={url}
+    {...linkAttributes}
     class="hover:bg-lightModeCustomLinkBackgroundHover dark:hover:bg-darkModeCustomLinkBackgroundHover hover:ring-lightModeCustomLinkOutlineHover dark:hover:ring-darkModeCustomLinkOutlineHover hover:text-lightModeCustomLinkTextHover dark:hover:text-darkModeCustomLinkTextHover flex items-center justify-center gap-2 rounded-full bg-lightModeCustomLinkBackground px-6 py-3 text-lg text-lightModeCustomLinkText ring-2 ring-lightModeCustomLinkOutline transition-colors dark:bg-darkModeCustomLinkBackground dark:text-darkModeCustomLinkText dark:ring-darkModeCustomLinkOutline"
   >
     <slot />
